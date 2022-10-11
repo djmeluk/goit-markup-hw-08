@@ -1,0 +1,149 @@
+.footer {
+  background-color: var(--secondary-background-color);
+  padding: 60px 0;
+
+  &-box {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__logo {
+    color: var(--logo-footer-color);
+    margin: 0;
+    padding: 0;
+  }
+}
+
+////////Адрес///////
+.address {
+  margin-top: 20px;
+
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  &__city {
+    color: var(--primary-background-color);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    transition: var(--time-cubic);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+
+  &__link {
+    color: var(--address-link-color);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    transition: var(--time-cubic);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+}
+
+/////Приєднуйтесь/////
+.social-box {
+  margin-left: 70px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-background-color);
+    margin-bottom: 20px;
+  }
+
+  &__social-list {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__item {
+    width: 44px;
+    height: 44px;
+  }
+
+  &__link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    fill: var(--primary-background-color);
+    transition: var(--time-cubic);
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
+  }
+}
+
+/////// Розсилка //////
+.form-box {
+  display: flex;
+}
+
+.mailing-form {
+  margin-left: auto;
+
+&__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--primary-background-color);
+        margin-bottom: 20px;
+    }
+
+    &__input {
+        width: 358px;
+        height: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        background-color: var(--secondary-background-color);
+        padding: 0 0 0 15px;
+        color: var(--primary-background-color);
+        
+        &::placeholder {
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
+    }
+
+    
+
+    &__button-primary {
+        margin-left: 12px;
+        min-width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+    }
+
+}
+
+
+

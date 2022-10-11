@@ -1,0 +1,82 @@
+.main-nav {
+  display: flex;
+}
+///////Навігація сторінки////////
+.nav-pages {
+  display: flex;
+
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  &__link {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: var(--time-cubic);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+}
+
+///////Карент//////
+.current {
+  color: var(--accent-color);
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+  }
+}
+
+///////Контакти///////
+.nav-contact {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  &__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    fill: var(--primary-text-color);
+    transition: var(--time-cubic);
+
+    &:hover,
+    &:focus {
+      fill: var(--accent-color);
+      color: var(--accent-color);
+    }
+  }
+
+  .nav-contact__icon {
+    margin-right: 10px;
+  }
+}
