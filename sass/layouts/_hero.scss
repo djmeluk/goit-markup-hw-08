@@ -1,32 +1,95 @@
 .hero {
+  padding: 118px 0;
+
+  @media screen and (min-width: 1200px) {
     padding: 200px 0;
-    text-align: center;
-    background-color: var(--overlay-background-color);
-    
-&__title {
+  }
+
+  text-align: center;
+  background-color: var(--overlay-background-color);
+
+  &__title {
     color: var(--primary-background-color);
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.3;
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: 1.3;
+      width: 696px;
+    }
+
+    font-size: 26px;
+    line-height: 1.6;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    width: 696px;
+    width: 360px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
-}
-&__overlay {
+  }
+  &__overlay {
     max-width: 1600px;
-    height: 600px;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
-    background-position: 100%;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: linear-gradient(to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../images/baner.jpg);
-}
-}
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/header-mobile.jpg);
 
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/header-mobile-2x.jpg);
+    }
+
+    @media screen and (min-width: 768px) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/header-tablet.jpg);
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url(../images/header-tablet-2x.jpg);
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/baner.jpg);
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url(../images/baner-2x.jpg);
+      }
+    }
+  }
+}

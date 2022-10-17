@@ -5,18 +5,37 @@
     text-align: center;
     line-height: 42px;
     letter-spacing: 0.03em;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    @media screen and (min-width:1200px) {
+       margin-bottom: 50px;
+    }
+     
+    
+    
   }
 
   &__list {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
+
+    @media screen and (min-width:1200px) {
+      flex-wrap: nowrap;
+      }
+
   }
 
   &__item {
-    width: 170px;
+    width: 210px;
     height: 92px;
+
+    @media screen and (min-width:756px) {
+      width:226px;
+    }
+         @media screen and (min-width:1200px) {
+           width: 170px;
+         }
+    
   }
 
   &__link {

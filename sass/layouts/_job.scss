@@ -1,5 +1,11 @@
 .job {
-    padding-top: 0;
+    @media screen and (min-width: 0px) and (max-width: 1999px) {
+        display: none;
+
+                @media screen and (min-width: 1200px) {
+                    display: flex;
+                }
+    }
 
     &__title {
             color: var(--title-text-color);
@@ -11,7 +17,10 @@
         }
     
         &__list {
-            display: flex;
+            @media screen and (min-width: 1200px) {
+                display: flex;
+            }
+           
         }
     
         &__item {
