@@ -25,7 +25,10 @@
           >
           <button type="button" class="menu-button is-open" data-menu-button>
             <svg width="40" height="40" aria-label="Перемикач мобільного меню">
-              <use class="icon-cross" href="./images/icons.svg#mob-menu-close"></use>
+              <use
+                class="icon-cross"
+                href="./images/icons.svg#mob-menu-close"
+              ></use>
               <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
             </svg>
           </button>
@@ -141,31 +144,31 @@
           <ul class="job__list list">
             <li class="job__item">
               <img
+                srcset="./images/code.jpg 1x, ./images/code-2x.jpg 2x"
                 class="img"
-                src="./images/code.jpg"
                 alt="написання коду працівником"
+                src="./images/code.jpg"
                 width="370"
-                height="294"
               />
               <p class="job__text">десктопні додатки</p>
             </li>
             <li class="job__item">
               <img
+                srcset="./images/mobile.jpg 1x, ./images/mobile-2x.jpg 2x"
                 class="img"
-                src="./images/mobile.jpg"
                 alt="працівник з телефоном та компютером"
+                src="./images/mobile.jpg"
                 width="370"
-                height="294"
               />
               <p class="job__text">мобільні додатки</p>
             </li>
             <li class="job__item">
               <img
                 class="img"
-                src="./images/planshet.jpg"
+                srcset="./images/planshet.jpg 1x, ./images/planshet-2x.jpg 2x"
                 alt="працівник з планшетом"
+                src="./images/planshet.jpg"
                 width="370"
-                height="294"
               />
               <p class="job__text">дизайнерські рішення</p>
             </li>
@@ -180,11 +183,18 @@
           <ul class="team__list list">
             <li class="team__item">
               <img
-                class="img"
-                src="./images/demyanenko.jpg"
+                srcset="
+                  ./images/demyan-desk.jpg    270w,
+                  ./images/demyan-tab.jpg     354w,
+                  ./images/demyan-mob.jpg     450w,
+                  ./images/demyan-desk@2x.jpg 540w,
+                  ./images/demyan-tab@2x.jpg  708w,
+                  ./images/demyan-mob@2x.jpg  908w
+                "
+                src="./images/demyan-desk.jpg"
                 alt="працівник Демяненко"
-                width="270"
-                height="260"
+                sizes="(min-width:1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px"
+                class="img"
               />
               <div class="team__card">
                 <h3 class="team__employee">Ігор Дем'яненко</h3>
@@ -224,11 +234,18 @@
 
             <li class="team__item">
               <img
-                class="img"
-                src="./images/repina.jpg"
+                srcset="
+                  ./images/rep-desk.jpg    270w,
+                  ./images/rep-tab.jpg     354w,
+                  ./images/rep-mob.jpg     450w,
+                  ./images/rep-desk@2x.jpg 540w,
+                  ./images/rep-tab@2x.jpg  708w,
+                  ./images/rep-mob@2x.jpg  908w
+                "
+                src="./images/rep-desk.jpg"
                 alt="працівник Рєпіна"
-                width="270"
-                height="260"
+                sizes="(min-width:1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px"
+                class="img"
               />
               <div class="team__card">
                 <h3 class="team__employee">Ольга Рєпіна</h3>
@@ -268,11 +285,18 @@
 
             <li class="team__item">
               <img
-                class="img"
-                src="./images/tarasov.jpg"
+                srcset="
+                  ./images/tar-desk.jpg    270w,
+                  ./images/tar-tab.jpg     354w,
+                  ./images/tar-mob.jpg     450w,
+                  ./images/tar-desk@2x.jpg 540w,
+                  ./images/tar-tab@2x.jpg  708w,
+                  ./images/tar-mob@2x.jpg  908w
+                "
+                src="./images/tar-desk.jpg"
                 alt="працівник Тарасов"
-                width="270"
-                height="260"
+                sizes="(min-width:1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px"
+                class="img"
               />
               <div class="team__card">
                 <h3 class="team__employee">Микола Тарасов</h3>
@@ -312,11 +336,18 @@
 
             <li class="team__item">
               <img
-                class="img"
-                src="./images/ermakov.jpg"
+                srcset="
+                  ./images/ermak-desk.jpg    270w,
+                  ./images/ermak-tab.jpg     354w,
+                  ./images/ermak-mob.jpg     450w,
+                  ./images/ermak-desk@2x.jpg 540w,
+                  ./images/ermak-tab@2x.jpg  708w,
+                  ./images/ermak-mob@2x.jpg  908w
+                "
+                src="./images/ermak-desk.jpg"
                 alt="працівник Єрмаков"
-                width="270"
-                height="260"
+                sizes="(min-width:1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px"
+                class="img"
               />
               <div class="team__card">
                 <h3 class="team__employee">Михайло Єрмаков</h3>
