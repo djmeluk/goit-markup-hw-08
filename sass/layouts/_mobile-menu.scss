@@ -27,9 +27,23 @@
 .menu-toggle__icon {
     @media screen and (min-width: 768px) {
         display: none;
+        transition: var(--time-cubic);
     }
 }
 
+.menu-toggle__icon:hover,
+.menu-toggle__icon:focus {
+ fill:var(--accent-color) ;
+}
+
+.menu-toggle__close {
+transition: var(--time-cubic);
+}
+
+.menu-toggle__close:hover,
+.menu-toggle__close:focus {
+    fill: var(--accent-color);
+}
 .menu-container__wrap {
     height: 100%;
     width: 100%;
