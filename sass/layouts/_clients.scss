@@ -1,13 +1,15 @@
 .clients {
   &__title {
     color: var(--title-text-color);
-    font-size: 36px;
+    font-size: 28px;
     text-align: center;
-    line-height: 42px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     margin-bottom: 30px;
     @media screen and (min-width:1200px) {
        margin-bottom: 50px;
+      font-size: 36px;
+      line-height: 1.16;
     }
      
     
@@ -26,10 +28,10 @@
   }
 
   &__item {
-    width: 210px;
-    height: 92px;
-
-    @media screen and (min-width:756px) {
+      width: 210px;
+      height: 92px;
+  
+    @media screen and (min-width:768px) {
       width:226px;
     }
          @media screen and (min-width:1200px) {

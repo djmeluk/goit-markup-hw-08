@@ -1,29 +1,13 @@
 .main-nav {
   display: flex;
-}
-.menu-button {
-  // display: inline-flex;
-  margin-left: 276px;
-  padding: 0;
-  border: none;
-  background-color: transparent;
+      align-items: center;
+        justify-content: space-between;
+        
 
-}
-
-.menu-button .icon-cross {
-  display: none;
-}
-
-.menu-button.is-open .icon-cross {
-  display: block;
-}
-
-.menu-button.is-open .icon-menu {
-  display: none;
 }
 ///////Навігація сторінки////////
 .nav-pages {
-  @media screen and (min-width: 0px) and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
      display: none;
     }
   display: flex;
@@ -70,24 +54,40 @@
 
 ///////Контакти///////
 .nav-contact {
-  @media screen and (min-width: 0px) and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
       display: none;
     }
-  margin-left: auto;
-  display: flex;
-  align-items: center;
 
-  &__item:not(:last-child) {
-    margin-right: 50px;
-  }
+        @media screen and (min-width: 768px) {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+          margin-left: 90px;
+        }
+
+                @media screen and (min-width: 1200px) {
+                  flex-wrap: nowrap;
+                  gap: 30px;
+                  margin-left: auto;
+                }
+
+ 
+  
 
   &__link {
-    padding-top: 32px;
-    padding-bottom: 32px;
     color: var(--primary-text-color);
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.2px;
+    @media screen and (min-width: 768px) {
+    font-size: 12px;
+      line-height: 1.16;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-top: 32px;
+        padding-bottom: 32px;
+        font-size: 14px;
+          line-height: 1.14;
+    }
+
     letter-spacing: 0.02em;
     text-decoration: none;
     display: flex;
@@ -104,5 +104,6 @@
 
   .nav-contact__icon {
     margin-right: 10px;
+    
   }
 }
